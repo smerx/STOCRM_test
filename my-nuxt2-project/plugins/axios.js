@@ -4,10 +4,20 @@ export default ({ $axios }, inject) => {
   const api = axios.create({
     baseURL: 'https://testirk.stocrm.ru/api/external/v1/',
     headers: {
-      'Authorization': `Bearer 10007_b7e70c58771c3305d98b6314b789b2b1`,
+      'Authorization': `Bearer YOUR_API_KEY`,
       'Content-Type': 'application/json'
     }
   });
   inject('api', api);
-};
 
+
+  api.getPostById = async (postId) => {
+    try {
+      const response = await api.get(`posts/${postId}`);
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      return null;
+    }
+  };
+};
