@@ -1,5 +1,5 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+
   head: {
     title: 'test',
     htmlAttrs: {
@@ -16,11 +16,11 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+
   css: [
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+
   plugins: [
     '~/plugins/axios.js'
   ],
@@ -34,6 +34,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/dotenv'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
