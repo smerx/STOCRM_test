@@ -40,7 +40,7 @@ export default {
   data() {
     return {
       filter: {
-        CUSTOMER_ID: '1'
+        CUSTOMER_ID: ''
       },
       entries: [],
       error: null

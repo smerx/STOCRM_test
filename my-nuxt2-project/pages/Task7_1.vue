@@ -42,8 +42,8 @@
 export default {
   data() {
     return {
-      customerId: '1',
-      date: '2024-09-12',
+      customerId: '',
+      date: '',
       entries: [],
       error: null
     };
@@ -63,9 +63,6 @@ export default {
           if (entriesArray.length) {
             this.entries = entriesArray;
             this.error = null;
-          } else {
-            this.entries = [];
-            this.error = 'Записи не найдены.';
           }
         } else {
           this.entries = [];

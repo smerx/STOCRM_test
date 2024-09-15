@@ -50,12 +50,12 @@ export default {
   data() {
     return {
       newEntry: {
-        CUSTOMER_ID: '1',
-        POST_ID: '1',
-        DATE_FROM: '2024-09-14 15:00:00',
-        DATE_TO: '2024-09-14 16:00:00',
-        OFFER_ID: '2',
-        COMMENT: 'Попытка номер _'
+        CUSTOMER_ID: '',
+        POST_ID: '',
+        DATE_FROM: '2024-09-14 --:--:--',
+        DATE_TO: '2024-09-14 --:--:--',
+        OFFER_ID: '',
+        COMMENT: 'описание _____'
       },
       createdEntry: null,
       error: null
